@@ -1,0 +1,346 @@
+<html>
+    <head>
+        <title>
+            Nani
+        </title>
+        <style>
+            #q{
+            
+                width:250px;
+                text-align:center;
+                background-color:yellow;
+                border-radius: 70px;
+                border:10px;
+                border-style:groove;
+                border-color:red;
+            }
+            #q1{
+                width:50px;
+                background-color: aqua;
+                float:left;
+                border-radius: 5px;
+                border-style:solid;
+            }
+            #q2{
+                width:50px;
+                background-color: violet;
+                border-radius:10px;
+                border-style:solid;
+            }
+            h2{
+                float:left;
+                margin-left:10px;
+                margin-top:30px;
+            }
+            #button
+            {   width:100px;
+                border-style:groove;
+                border-color: blue;
+                background-color: lime;
+                margin-top:20px;
+                padding: 10px 20px 10px;
+            
+            }
+            #result
+            {
+                border-style: groove;
+                background-color: magenta;
+
+            }
+            </style>
+    </head>
+    <body>
+        <marquee bgcolor="lime" height="100">
+               
+                   <font color="hotpink"><h1>Eamcet Paper</h1></font>
+        </marquee>
+        <center>
+        <h1 id="q">Question Paper</h1>
+        </h1>
+        </center>
+    </body>
+    <h1 id="q1">
+        Q1.</h1>     
+        <h2>    HOW MANY SIDES DOES A <font color="blue">SQUARE</font> consisists </h2>
+
+        <br>
+        <br>
+        <br>
+        <h1>
+<ol type="a">
+            <li>
+                <input type="radio" name="one" id="a">1
+            </li>
+
+            <li>
+                <input type="radio"  name="one" id="b" >2
+            </li>
+            
+
+            <li>
+                <input type="radio"  name="one" id="c">3
+            </li>
+
+            <li>
+                <input type="radio"  name="one" id="d">4
+            </li>
+            
+    </ol>
+    </h1>
+   <center><button onclick=fun()><h1 id="button">Submit</h1></button></center>
+    <hr>
+    <hr>
+    <h1>
+        <h1 id="q2">
+
+        <font color="red">Q2.</font>
+    
+    </h1>     
+            <h2>    HOW MANY SIDES DOES A <font color="hotpink">Triangle</font> consisists </h2>
+            <br>
+            <br>
+            <br>
+           
+           <h1>
+            <ol type="a">
+        <li>
+            <input type="radio" name="one" id="a1">1
+        </li>
+
+        <li>
+            <input type="radio"  name="one" id="b1">2
+        </li>
+        
+
+        <li>
+            <input type="radio"  name="one" id="c1">3
+        </li>
+
+        <li>
+            <input type="radio"  name="one" id="d1">4
+        </li>
+        </ol>
+    </h1>
+<center>
+    <button onclick=fun1()><h1 id="button">Submit</h1></button>
+</center>
+
+<hr>
+    <hr>
+    <h1>
+        <h1 id="q2">
+
+        <font color="yellow">Q3.</font>
+    
+    </h1>     
+            <h2> HOW MANY SIDES DOES A <font color="blue">Pentagon</font> consisists </h2>
+            <br>
+            <br>
+            <br>
+
+           
+           
+           <h1>
+            <ol type="a">
+        <li>
+            <input type="radio" name="one" id="a2">2
+        </li>
+
+        <li>
+            <input type="radio"  name="one" id="b2">3
+        </li>
+        
+
+        <li>
+            <input type="radio"  name="one" id="c2">4
+        </li>
+
+        <li>
+            <input type="radio"  name="one" id="d2">5
+        </li>
+        </ol>
+    </h1>
+   
+    <center>
+        <button onclick=fun2()><h1 id="button">Submit</h1></button>
+    </center>
+    
+    <h1 id="q2">
+
+        <font color="aqua">Q4.</font>
+    </h1>
+    <h2> HOW MANY SIDES DOES A <font color="green">Hexagon</font> consisists </h2>
+    <br>
+    <br>
+    <br>
+
+   
+   
+   <h1>
+    <ol type="a">
+<li>
+    <input type="radio" name="one" id="a3">1
+</li>
+
+<li>
+    <input type="radio"  name="one" id="b3">3
+</li>
+
+
+<li>
+    <input type="radio"  name="one" id="c3">6
+</li>
+
+<li>
+    <input type="radio"  name="one" id="d3">5
+</li>
+</ol>
+</h1>
+
+<center>
+<button onclick=fun3()><h1 id="button">Submit</h1></button>
+</center>
+<hr>
+,<hr>
+<hr>
+<hr>
+<hr>
+<center><button onclick="result()"><h1 id="result">ScoreCard</h1></button></h1></center>
+    <script>
+        let score=0;
+        function fun()
+        {   
+             var a=document.getElementById("a");
+             var b=document.getElementById("b");
+             var c=document.getElementById("c");
+             var d=document.getElementById("d");
+            
+            if(d.checked==true)
+            {
+            alert("write answer");
+            score++;
+            }
+
+            else if(b.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else if(c.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else if(a.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else{
+                alert("click on button")
+            }
+        }
+        function fun1()
+        {
+            var a=document.getElementById("a1");
+             var b=document.getElementById("b1");
+             var c=document.getElementById("c1");
+             var d=document.getElementById("d1");
+            
+            if(c.checked==true)
+            {
+            alert("write answer");
+            score++;
+            }
+
+            else if(b.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else if(d.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else if(a.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else{
+                alert("click on button");
+            }
+         }
+         function fun2()
+        {
+            var a=document.getElementById("a2");
+             var b=document.getElementById("b2");
+             var c=document.getElementById("c2");
+             var d=document.getElementById("d2");
+            
+            if(d.checked==true)
+            {
+            alert("write answer");
+            score++;
+            }
+
+            else if(b.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else if(c.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else if(a.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else{
+                alert("click on button");
+            }
+         }
+         function fun3()
+        {
+            var a=document.getElementById("a3");
+             var b=document.getElementById("b3");
+             var c=document.getElementById("c3");
+             var d=document.getElementById("d3");
+            
+            if(c.checked==true)
+            {
+            alert("write answer");
+            score++;
+            }
+
+            else if(b.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else if(a.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else if(d.checked==true)
+            {
+            alert("wrong answer");
+            score--;
+            }
+            else{
+                alert("click on button");
+            }
+         }
+         function result()
+         {
+             alert(score);
+         }
+    </script>
+
+
+</html>
