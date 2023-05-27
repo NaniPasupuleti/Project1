@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>
+        Nani
+    </title>
+    <style>
+       
+    </style>
+</head>
+    <body>
+        <marquee scrollamount="10" bgcolor="lime" height="100">
+         <font color="Hotpink"><h1>Assignment-1</h1></font> 
+        </marquee>
+        <h1><font color=""><center>Program to find Reverse of a Given Number</center></font></h1>
+            <hr>
+            <hr>
+        <input type="number" id="s" placeholder="Enter a number">
+    
+        <button onclick="fun()">
+           <h1><font color="red">Reverse</font></h1></button>
+
+ <hr>
+<hr>
+<hr>
+<hr>
+<h1>
+<center>
+    <font color="orange">Program to print         Fibonacci Series</font>
+</center>
+    <input type="number" placeholder="Enter a number" id='r'>
+    </font>
+    <hr>
+    <button onclick="fun1()"/>
+    
+    <h1>FibonacciSeries</h1>
+  </button>
+</h1>
+
+<hr>
+<hr>
+<hr>
+<hr>
+
+<h1>
+<h1><font color="hotpink"><center>Program on Fizz and Buzz</center></font></h1>
+<hr>
+<input type="number" placeholder="Enter a value" id="a">
+<button onclick="fun2()">
+    <h1>
+      <font color="blue">AppyFizz</font>
+    </h1>
+
+</button>
+<a href="C:\Users\dell\Downloads\e93a701370e41e23b07fe0064f2181dc.jpg">
+    <h1><center><font color="lime">Chill</font></center></h1>
+</a>
+
+            <script>
+                function fun()
+                {
+                    let n=parseInt(document.getElementById("s").value);
+                    let sum=0;
+                    let rem;
+                    while(n!=0)
+                    {
+                        rem=n%10;
+                        sum=sum*10+rem;
+                        n=Math.floor(n/10);
+                    }
+                    console.log(sum);
+                    alert (sum);
+                }
+                
+                function fun1()
+                {
+                    let a=0;
+                    let b=1;
+                    let c=0;
+                    let i=1;
+                    let res=parseInt(document.getElementById('r').value);
+                    while(c<=res)
+                    {
+                        console.log(i,"   ",c);
+alert (c);
+                        a=b;
+                        b=c;
+                        c=a+b;
+                    }
+                }
+            
+                function fun2()
+                {
+                    let n=parseInt(document.getElementById("a").value);
+                    if(n%3==0)
+                    {
+                       console.log("Fizz");
+                        document.write("Fizz");
+                        alert ("Fizz");
+                    }
+                    else if(n%3==0&&n%5==0)
+                    {
+                        console.log("Appy");
+                        alert ("appy");
+                        
+                        document.write("appy");
+                        alert ("appy");
+                    }
+                    alert("Thanks to SreeRam annayya");
+
+                }
+                
+            </script>
+    </body>
+    </html>
+    
